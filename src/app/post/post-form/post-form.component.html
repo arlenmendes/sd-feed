@@ -1,0 +1,9 @@
+<div>
+  <h2>Mensagem</h2>
+  <form #f="ngForm" (submit)="form_submit(f)">
+    <div class="form-group">
+      <textarea name="mensagem" id="mensagem"rows="3" class="form-control" required minlength="3" ngModel></textarea>
+    </div>
+    <button type="submit" class="btn btn-outline-primary">Postar</button>
+  </form>
+</div>

@@ -1,0 +1,11 @@
+<ul class="list-posts">
+  <li *ngFor="let p of posts | async" class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ p.mensagem }}</h5>
+      <p class="card-text">
+
+        {{ p.autor }}
+      </p>
+    </div>
+  </li>
+</ul>
